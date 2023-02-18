@@ -313,65 +313,201 @@
 
           <h2 class="pt-5 pb-5">Portifólio</h2>
 
-          <div id="carouselPortifolio" class="carousel-dark carousel slide">
+          <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" >
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col">
-                    <div class="card">
-                      <img src="../static/img/fundoFina.png" class="card-img-top" alt="...">
-                      
+                <div class="carousel-item active" data-bs-interval="10000">
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="../static/img/plataforma-gen.png" class="card-img-top"
+                                    alt="Plataforma educacional">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plataforma educacional</h5>
+                                    <p class="card-text">Projeto fullstack criado com MySQL, Spring e Angular,
+                                        acesso restrito, apenas pessoas autorizadas</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="http://generationbrasil.online/#/login" target='_blank'
+                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../static/img/blog.png" class="card-img-top img-fluid w-100"
+                                    alt="print do blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog Pessoal</h5>
+                                    <p class="card-text">Projeto fullstack criado com MySQL, Spring e Angular,
+                                        deploy realizado no Heroku e no Netlify</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://github.com/codethi/blogPessoal-front-back"
+                                            target='_blank' class="btn btn-outline-dark me-3"><i
+                                                class="bi bi-github"></i></a>
+                                        <a href="https://newbloggen.netlify.app/#/login" target='_blank'
+                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../static/img/pokedex.png" class="card-img-top img-fluid w-100"
+                                    alt="print do blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pokedéx</h5>
+                                    <p class="card-text">Projeto fullstack criado com PostegreSQL, Flask, HTML,
+                                        CSS e JavaScript, deploy realizado no Heroku</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://github.com/codethi/pokedex-flask" target='_blank'
+                                            class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                        <a href="https://pokedex-thicode.herokuapp.com/" target='_blank'
+                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="../static/img/fundoFina.png" class="card-img-top" alt="...">
-                      
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="../static/img/fundoFina.png" class="card-img-top" alt="...">
-                      
-                    </div>
-                  </div>
-                  
+
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-item active">
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card">
-                        <img src="../static/img/fundoFina.png" class="card-img-top" alt="...">
-                        
-                      </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../static/img/bluesmusic.png" class="card-img-top img-fluid w-100"
+                                    alt="print do blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blue Music</h5>
+                                    <p class="card-text">Projeto fullstack criado com SQLite, Flask, HTML, CSS e
+                                        JavaScript,
+                                        deploy realizado no Heroku</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://github.com/codethi/BlueMusicV2" target='_blank'
+                                            class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                        <a href="https://appbluemusic.herokuapp.com/" target='_blank'
+                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../static/img/timer.png" class="card-img-top img-fluid w-100"
+                                    alt="print do blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Timer</h5>
+                                    <p class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
+                                        JavaScript,
+                                        deploy realizado no Netlify</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://github.com/codethi/cronometro-intervalo"
+                                            target='_blank' class="btn btn-outline-dark me-3"><i
+                                                class="bi bi-github"></i></a>
+                                        <a href="https://timer-break.netlify.app/" target='_blank'
+                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../static/img/pagina-links.png" class="card-img-top img-fluid w-100"
+                                    alt="print do blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Página de Links</h5>
+                                    <p class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
+                                        JavaScript,
+                                        deploy realizado no Netlify</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://github.com/codethi/thi.code" target='_blank'
+                                            class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                        <a href="https://thicode.netlify.app/" target='_blank'
+                                            class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="../static/img/fundoFina.png" class="card-img-top" alt="...">
-                        
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="../static/img/fundoFina.png" class="card-img-top" alt="...">
-                        
-                        
-                      </div>
-                    </div>
-                    
-                  </div>
                 </div>
-              </div>
+
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
             
           </div>
           
+        </div>
+      </section>
+
+      <section id="contato" class="pt-5 pb-5">
+        <div class="container mb-5">
+          <h2 class="pt-3 pb-3">Contato</h2>
+
+            <div class="row">
+
+             <div class="col-md-5">
+                <div class="card p-5 shadow border-0">
+                  <div class="endereco">
+                    <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                    <p>Ibirité, MG</p>
+                  </div>
+                  <div class="email">
+                    <h4><i class="bi bi-envelope"></i> Email:</h4>
+                    <p>ppphsantos@gmail.com</p>
+                  </div>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.6147760662025!2d-44.06764818466704!3d-19.98269648657441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6bfa814b8e063%3A0xcfbecde86d9dcdab!2sAv.%20Mal.%20Hermes%20-%20Palmares%2C%20Ibirit%C3%A9%20-%20MG%2C%2032400-000!5e0!3m2!1spt-BR!2sbr!4v1676747464809!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+
+                </div>
+             </div>
+
+             <div class="col-md-7 mt-5 mt-md-0">
+                <div class="card p-5 h-100 shadow border-0">
+
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="nome" class="form-label">Nome:</label>
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="col-12">
+                      <label for="mensagem" class="form-label">Mensagem:</label>
+                      <textarea rows="10" type="text" class="form-control" id="inputAddress" placeholder="Digite sua mensagem" name="mensagem"></textarea>
+                    </div>
+                   
+                    <div class="col-12 d-flex justify-content-center mt-4">
+                      <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </div>
+                  </form>
+
+                </div>
+             </div>
+
+            </div>
+
         </div>
       </section>
 
