@@ -44,3 +44,19 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
     animeScroll();
 })
+
+//Ativar carregamento do botão enviar fomulário para
+
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarCarregando = document.querySelector('#btn-enviar-carregando')
+
+btnEnviar.addEventListener("click", ()=>{
+    btnEnviarCarregando.style.display = "block";
+    btnEnviar.style.display = "none"
+})
+
+//Tira mensagem de sucesso de envio de email depois de 5 segundos
+
+setTimeout(() =>{
+    document.querySelector('#alerta').style.display = "none"
+}, 5000)

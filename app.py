@@ -7,9 +7,9 @@ app.secret_key = 'phsantos'
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
-    "MAIL_PORT": 465,
-    "MAIL_USE_TLS": False,
-    "MAIL_USE_SSL": True,
+    "MAIL_PORT": 587,
+    "MAIL_USE_TLS": True,
+    "MAIL_USE_SSL": False,
     "MAIL_USERNAME": email,
     "MAIL_PASSWORD": senha
 }
@@ -22,8 +22,8 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome,
-        self.email = email,
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
 
 @app.route('/')
@@ -40,12 +40,11 @@ def send():
         )
         msg = Message (
             subject= f'{formContato.nome} te enviou uma mensagem no portifólio',
-            sender= app.config.get("MAIL_USERNAME"),
+            sender= 'Meu_Portifólio',
             recipients= ['ppphsantos@gmail.com', app.config.get("MAIL_USERNAME")],
             body= f"""
 
-            {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte
-            mensagem: 
+            {formContato.nome} com o e-mail {formContato.email} te enviou a seguinte mensagem: 
 
             {formContato.mensagem}
 
@@ -54,7 +53,7 @@ def send():
         
         mail.send(msg)
         flash('Mensagem enviada com sucesso!')
-    redirect('/')
+    return redirect('/')
 
 if __name__== '__main__':
     app.run(debug=True)
