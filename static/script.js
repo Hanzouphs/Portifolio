@@ -71,9 +71,9 @@ new TypeIt(".animaNome", {
 
   new TypeIt(".animaNome2", {
     strings: ["Desenvolvedor Full Stack "],
-    speed: 100,
+    speed: 70,
     waitUntilVisible: true,
-    startDelay: 1000,
+    startDelay: 1100,
     
    
   }).go();
