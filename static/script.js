@@ -60,3 +60,21 @@ btnEnviar.addEventListener("click", ()=>{
 setTimeout(() =>{
     document.querySelector('#alerta').style.display = "none"
 }, 5000)
+
+new TypeIt(".animaNome", {
+    strings: "Pedro Henrique",
+    speed: 50,
+    waitUntilVisible: true,
+    cursor: false,
+    
+  }).go();
+
+  new TypeIt(".animaNome2", {
+    strings: ["Desenvolvedor Full Stack "],
+    speed: 100,
+    waitUntilVisible: true,
+    startDelay: 1000,
+    
+   
+  }).go();
+
